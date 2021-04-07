@@ -12,14 +12,14 @@ The data is obviously imblance which "Yes" label is relative less, so the accura
 <br /><br />
 ## Upsample
 I've done upsampling to balance data. Here I tried three different kinds of upsampling method (see Reference [1]).Unsample is using "imblearn" library in python. Data size analysis by class is in below table.
-<img src="pic/data_size_analysis.png" alt="pic/data_size_analysis.png" width="400"><br />
+<br /><img src="pic/data_size_analysis.png" alt="pic/data_size_analysis.png" width="400"><br />
 Below is the performance of Random Forest with differernt upsampling methods. As a result, I choose **Tomek + ENN** as my upsampling method.
-<img src="pic/rf.png" alt="pic/rf.png" width="800"><br />
+<br /><img src="pic/rf.png" alt="pic/rf.png" width="800"><br />
 Upsample data may lower overall accuracy, but the small class is predicted unwell. So it's worth to lower a little accuracy to increase AUROC.
 <br /><br />
 ## Model Comparison
 I've tried three models: Random Forest, Support Vector Classifier, XGBoost. Below is the performance of these model with upsample and un-upsample data.
-<img src="pic/models_compare.png" alt="pic/models_compare.png" width="800"><br />
+<br /><img src="pic/models_compare.png" alt="pic/models_compare.png" width="800"><br />
 As a result, I choose Random Forest(RF) as my model.
 <br /><br />
 ## Other Try
