@@ -8,14 +8,14 @@ Full report in Chinese is in **"report"** folder.
 <img src="pic/workflow2.png" alt="pic/workflow2.png" width="700"><br />
 <br /><br />
 ## Metric
-The data is obviously imblance which "Yes" label is relative less, so the accuracy score may has a little bias. Here I implement **AUROC** as our metric.
+The data is obviously imblance which "Yes" label is relative few, so the accuracy score may have a little bias. Here I implement **AUROC** as our metric.
 <br /><br />
 ## Upsample
-I've done upsampling to balance data. Here I tried three different kinds of upsampling method (see Reference [1]).Unsample is using "imblearn" library in python. Data size analysis by class is in below table.
+I've done upsampling to balance data. Here I tried three different kinds of upsampling method (see Reference [1]).Unsample is using "imblearn" library in Python. Data size analysis by class is in below table.
 <br /><img src="pic/data_size_analysis.png" alt="pic/data_size_analysis.png" width="400"><br />
-Below is the performance of Random Forest with differernt upsampling methods. As a result, I choose **Tomek + ENN** as my upsampling method.
+Below is the performance of Random Forest with differernt kinds of upsampled data. As a result, I choose **Tomek + ENN** as my upsampling method.
 <br /><img src="pic/rf.png" alt="pic/rf.png" width="800"><br />
-Upsample data may lower overall accuracy, but the small class is predicted unwell. So it's worth to lower a little accuracy to increase AUROC.
+Upsample data may lower overall accuracy, but the small class is predicted better. So it's worth to lower a little accuracy to increase AUROC.
 <br /><br />
 ## Model Comparison
 I've tried three models: Random Forest, Support Vector Classifier, XGBoost. Below is the performance of these model with upsample and un-upsample data.
