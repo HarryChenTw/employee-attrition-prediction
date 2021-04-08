@@ -1,7 +1,7 @@
 # Emplyee Attrition Prediction
 This is a machine learning project aims to predict whether a employee will stay in company or not based on several individual-related attributes. The model used here is Random Frorest along with upsampled data.
 Besides, this is a homework during Data Mining Course.
-<br />
+<br /><br />
 Full report in Chinese is in **"report"** folder.
 <br /><br />
 ## Overall Workflow
