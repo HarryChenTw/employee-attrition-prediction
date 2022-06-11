@@ -4,7 +4,7 @@ Besides, this is a homework during Data Mining Course.
 <br /><br />
 Full report in Chinese is in **"report"** folder.
 <br /><br />
-Project are done in Dec. 2021
+Project are done in Dec. 2020
 <br /><br />
 ## Overall Workflow
 <img src="pic/workflow2.png" alt="pic/workflow2.png" width="700"><br />
